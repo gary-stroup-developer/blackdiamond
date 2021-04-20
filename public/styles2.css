@@ -1,0 +1,282 @@
+body{
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(45deg,#FAFAFA,#232931);
+    padding: 20px;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+/* the logo start */
+
+.logo {
+    display: flex;                    /* align-items:center; justify-content: space-evenly; *//* margin-right: auto; */
+}
+.diamond {
+    display: flex;
+    width: 50px;
+    height:auto;
+    margin: 0 5px;
+}
+
+p.company {
+    display: flex;
+    font-size: 60px;
+    margin: 0 5px;
+
+}
+/*the logo end*/
+
+
+#searchBar {
+    display: flex;
+    justify-self: left;
+
+}
+
+.searchField {
+    width: 350px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    margin: auto 0;
+}
+
+.searchButton {
+    position: relative;
+    right: 10%;
+    margin: auto 0;
+
+}
+
+
+#signinLink {
+    display: flex;
+    flex: auto;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.flex-container{
+    display: flex;
+}
+.flex-container2{
+    flex:100%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.hidden{
+    width:100px;
+    height:5px;
+}
+
+#signinLink a{
+    display: flex;
+    margin: 5px 30px;
+    text-decoration: none;
+    color: #FAFAFA;
+    font-size: 18px;
+}
+
+.shopCart {
+    display: flex;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    color: #FAFAFA;
+}
+
+.navbar{
+    display: flex;
+    flex:auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar a {
+    display: flex;
+    text-decoration: none;
+    color: #232931;
+    font-size: 18px;
+}
+
+.navbar a:hover{
+    background-color: #FAFAFA;
+}
+
+.highlight-reel {
+    margin-top: 10px;
+    display: flex;
+}
+
+img {
+    height: 450px;
+}
+
+.ads {
+    display:flex;
+    align-content: center;
+    justify-content:space-evenly;
+    background-color: #232931;
+}
+
+.h4,.h6, h1, h2{
+    display:flex;
+    margin: 0 auto;
+    font-size: 1.85rem;
+}
+
+.h4 {
+    font-size: 21px;
+    color: #FAFAFA;
+}
+
+.h6 {
+    font-size: 10px;
+    color:#FAFAFA;
+}
+
+.ad-one, .ad-two {
+    flex-direction: column;
+}
+
+.v1 {
+    border: 3px solid #FAFAFA;
+    height:80px;
+}
+
+.carousel-inner{
+    margin-left: 25vw;
+}
+#carouselExampleIndicators {
+    margin-top: 15px;
+}
+
+
+.mid-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+.mid-section >h1 {
+    margin: 40px auto;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.mid-section-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.mid-section-cards-image {
+    display:flex;
+    flex-wrap: wrap;
+    width: 25vw;
+    height: auto;
+    align-content:flex-end;
+}
+
+.mid-section-cards-image-section {
+    display:flex;
+    flex-wrap: wrap;
+    flex: 50%;
+    justify-content: left;
+    align-items:center;
+    padding: 5px;
+  
+}
+
+
+.mid-section-cards-image-profile {
+    display:flex;
+    width: 10vw;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 25px;
+  
+}
+
+.mid-section-cards-image > a {
+    display: flex;
+    text-decoration: none;
+    color:#232931;
+    font-size: 1.3rem;
+    display: flex;
+    margin: 0 auto;
+}
+
+.mid-section-cards-image > p {
+    display: flex;
+    color: #232931;
+    font-size: 1.85rem;
+    margin: 0 auto;
+    font-weight: 700;
+}
+
+.teamMember {
+    display: flex;
+    color: #232931;
+    font-size: 1.85rem;
+    font-weight: 700;
+}
+
+.mid-section-cards-image >a:hover{
+    text-decoration: #232931;
+    text-decoration-line: underline;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #232931;
+    padding: 8px;
+}
+
+li {
+    list-style-type: none;
+    font-size: 0.8rem;
+    color: #FAFAFA;
+}
+
+.companyInformation {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socialMediaIcons {
+    display: flex;
+    justify-content:center;
+}
+
+.icon{
+    margin-left: 15px;
+    color:#FAFAFA;
+}
+
+@media (max-width: 600px){
+
+  .navbar {
+      flex-direction: column;
+      margin: 0 40%;
+  }
+  /* .carousel-item > img {
+    width: 50%;
+    height: auto;
+} */
+.carousel-inner {
+    margin-left: 0;
+}
+.mid-section-cards-image, .mid-section-cards-image-section{
+    flex: 100%;
+}
+
+}
